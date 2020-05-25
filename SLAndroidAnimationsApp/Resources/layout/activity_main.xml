@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:minWidth="25px"
+	android:minHeight="25px"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/constraintLayout1">
+	<Button
+		android:id="@+id/animation_drawable_button"
+		android:text="Drawable animation"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toTopOf="@+id/animation_view_button"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent" />
+	<Button
+		android:id="@+id/animation_view_button"
+		android:text="View animation"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@+id/animation_drawable_button"
+		app:layout_constraintBottom_toTopOf="@+id/animation_property_button"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent" />
+	<Button
+		android:id="@+id/animation_property_button"
+		android:text="Property animation"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@+id/animation_view_button"
+		app:layout_constraintBottom_toTopOf="@+id/layout_transition_button"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"/>
+	<Button
+		android:id="@+id/layout_transition_button"
+		android:text="Layout transition"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@+id/animation_property_button"
+		app:layout_constraintBottom_toTopOf="@+id/transition_manager_button"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"/>
+	<Button
+		android:id="@+id/transition_manager_button"
+		android:text="Transition manager"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@+id/layout_transition_button"
+		app:layout_constraintBottom_toTopOf="@+id/transition_manager_scenes_button"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent" />
+	<Button
+		android:id="@+id/transition_manager_scenes_button"
+		android:text="Transition manager scenes"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toBottomOf="@+id/transition_manager_button"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+  <item android:drawable="@drawable/baseline_alarm_24" android:duration="100" />
+  <item android:drawable="@drawable/baseline_alarm_add_24" android:duration="100" />
+  <item android:drawable="@drawable/baseline_alarm_off_24" android:duration="100" />
+  <item android:drawable="@drawable/baseline_alarm_on_24" android:duration="100" />
+</animation-list>
