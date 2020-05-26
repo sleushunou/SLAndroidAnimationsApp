@@ -4,6 +4,7 @@ using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
 using Android.Content;
+using SLAndroidAnimationsApp.Resources;
 
 namespace SLAndroidAnimationsApp
 {
@@ -16,6 +17,7 @@ namespace SLAndroidAnimationsApp
         private Button _propertyAnimationButton;
         private Button _layoutTransitionAnimationButton;
         private Button _transitionManagerScenesButton;
+        private Button _transitionsFragmentsSharedElement;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -41,6 +43,9 @@ namespace SLAndroidAnimationsApp
 
             _transitionManagerScenesButton = FindViewById<Button>(Resource.Id.transition_manager_scenes_button);
             _transitionManagerScenesButton.Click += OnTransitionManagerScenesButtonClick;
+
+            _transitionsFragmentsSharedElement = FindViewById<Button>(Resource.Id.transitions_fragments_shared_element);
+            _transitionsFragmentsSharedElement.Click += OnTransitionsFragmentsSharedElementClick; ;
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
@@ -78,6 +83,11 @@ namespace SLAndroidAnimationsApp
         private void OnTransitionManagerScenesButtonClick(object sender, System.EventArgs e)
         {
             StartActivity(new Intent(this, typeof(TransitionManagerScenesActivity)));
+        }
+
+        private void OnTransitionsFragmentsSharedElementClick(object sender, System.EventArgs e)
+        {
+            StartActivity(new Intent(this, typeof(TransitionsFragmentsSharedElementActivity)));
         }
     }
 }
